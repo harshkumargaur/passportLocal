@@ -18,7 +18,7 @@ const emailFunction = require('./utils/email');
 
 const ejs = require('ejs');
 const res = require('express/lib/response');
-const { find } = require('./models/user');
+
 app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(cookieParser());
