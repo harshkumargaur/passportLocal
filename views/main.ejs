@@ -1,0 +1,17 @@
+<%- include('partials/header') %>
+
+    <div>
+
+        <p>welcome</p>
+        <h1>
+            <% if(user){ %>
+                <%= user.email %> !!!
+
+                    <% }else{ %>
+                        user
+                        <% } %>
+
+        </h1>
+    </div>
+
+    <%- include('partials/footer') %>

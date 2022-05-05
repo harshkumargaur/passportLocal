@@ -1,0 +1,24 @@
+
+<%- include('partials/header') %>
+
+<form class="passwordResetForm">
+    
+    
+    <div>
+        <label for="newPassword">newPassword</label>
+        <input id="newPassword" class="inputPassword" type="password" required>
+    </div>
+    <div>
+        <label for="confirmPassword">confirmPassword</label>
+        <input id="confirmPassword" class="inputPassword" type="password" required>
+    </div>
+    <div>
+        <button type="submit">submit</button>
+    </div>
+</form>
+
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="/js/reset.js"></script>
+
+<%- include('partials/footer') %>

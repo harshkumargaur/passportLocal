@@ -1,0 +1,21 @@
+<%- include('partials/header')  %>
+
+<form class="loginForm">
+    <div>
+        <label for="email">email</label>
+        <input id="email" class="inputEmail" type="text" required>
+    </div>
+    <div>
+        <label for="password">password</label>
+        <input id="password" class="inputPassword" type="password" required>
+    </div>
+    <div>
+        <button type="submit">submit</button>
+    </div>
+</form>
+
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="/js/login.js"></script>
+
+<%- include('partials/footer')  %>

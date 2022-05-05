@@ -1,0 +1,28 @@
+<%- include('partials/header') %>
+
+    <form class="passwordChangeForm">
+        <div>
+
+            <p>Change password for</p>
+            <h1>
+                <%= user.email %>
+            </h1>
+        </div>
+        <div>
+            <label for="passwordOld">old password</label>
+            <input id="passwordOld" class="inputPassword" type="password" required>
+        </div>
+        <div>
+            <label for="passwordNew">new password</label>
+            <input id="passwordNew" class="inputPassword" type="password" required>
+        </div>
+        <div>
+            <button type="submit">submit</button>
+        </div>
+    </form>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/js/changePass.js"></script>
+
+    <%- include('partials/footer') %>
