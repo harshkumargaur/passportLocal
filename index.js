@@ -104,7 +104,7 @@ app.get('/secret', isLogged, function (req, res) {
 })
 
 app.get('/changePassword', isLogged, function (req, res) {
-  res.render('change', { title: 'reset password' });
+  res.render('change', { title: 'change password' });
 })
 
 app.post('/changePassword', isLogged, async function (req, res) {
