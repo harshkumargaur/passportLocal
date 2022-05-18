@@ -7,12 +7,16 @@
 4. change password given user know old password
 5. reset the password 
 6. protecting the routes 
-7. persisting user sessions using cookie-session npm pkg
+7. persisting user sessions using cookie-session npm pkg (the ssession cookie will contain the logged in user id which is base 64 encoded)
 
 *** Notes ***
 1. to create a self signed certificate run the command in  *** gen_self_signed.txt ***
 2. ***isLogged()**  function present in the index.js at line 57 restrict only authorized user to enter
 3. **res.locals.variable_name**  are present accross all the template files  .ejs
+
+## File/Folder Structure
+
+<img src = "/treeLayout.png" />
 
 
 *** configure passport js to use email as the username field  ***
